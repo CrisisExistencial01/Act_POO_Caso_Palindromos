@@ -3,9 +3,21 @@ import java.util.Scanner;
 public class Main {
     public static Scanner leer = new Scanner(System.in);
     public static void main(String[] args) {
-
+        menu();
     }
-    public static String leerCadena(String cadena){
+    public static void menu(){
+        while(true) {
+            System.out.print("Ingrese un palindromo: ");
+            String cadena = leerCadena();
+            System.out.println(esPalindromo(cadena));
+            System.out.println("Desea continuar? y/n");
+            String op = leerCadena();
+            if(!op.equalsIgnoreCase("y")){
+                break;
+            }
+        }
+    }
+    public static String leerCadena(){
         return leer.nextLine();
     }
     public static String borrarEspacios(String cadena){
