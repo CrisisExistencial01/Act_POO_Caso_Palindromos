@@ -13,4 +13,8 @@ public class Main {
     public static String borrarEspacios(String cadena){
         return cadena.replaceAll("\\s+", "");
     }
+    public static String invertirString(String cadena){
+        StringBuilder tmp = new StringBuilder(cadena);
+        return tmp.reverse().toString();
+    }
 }
