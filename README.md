@@ -52,3 +52,10 @@ public class Main {
 //output
 true
 ```
+## Paso 3:
+__Cree casos de prueba__
+Los casos de interés podrían ser:
+- Ingresar cadenas vacias
+- Ingresar cadenas con espacios
+- ingresar caracteres especiales
+- ingresar cadenas con mayusculas y minusculas
