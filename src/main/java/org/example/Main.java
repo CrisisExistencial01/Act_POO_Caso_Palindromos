@@ -10,4 +10,7 @@ public class Main {
     public static String leerCadena(String cadena){
         return leer.nextLine();
     }
+    public static String borrarEspacios(String cadena){
+        return cadena.replaceAll("\\s+", "");
+    }
 }
