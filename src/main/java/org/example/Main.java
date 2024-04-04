@@ -4,7 +4,6 @@ public class Main {
     public static Scanner leer = new Scanner(System.in);
     public static void main(String[] args) {
 
-
     }
     public static String leerCadena(String cadena){
         return leer.nextLine();
@@ -23,7 +22,8 @@ public class Main {
     }
     public static boolean esPalindromo(String cadena){
         // borra los espacios e invierte la string
-        String inversa = invertirString( borrarEspacios( cadena ) );
+        cadena = borrarEspacios(cadena);
+        String inversa = invertirString(cadena);
         //compara la string original con la invertida ignorando mayusculas
         return cadena.equalsIgnoreCase(inversa);
     }
